@@ -1,0 +1,89 @@
+  .main-container {
+    background: #f7f7f7;
+    min-height: calc(100vh - 70px);
+    display: flex;            /* ← flexbox to center */
+    overflow: auto;           /* ← only scrolls if content overflows */
+    flex-direction:column;
+  }
+
+  .container {
+    display: grid;
+    place-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .back-off{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    position: relative;
+  }
+
+  .badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: black;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .tier { color: gray; margin-bottom: 16px; }
+
+  .price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .price { font-size: 24px; font-weight: bold; }
+  .old-price { text-decoration: line-through; color: #888; }
+  .desc { margin: 16px 0; color: #444; line-height: 1.5; }
+  .popular { color: #ff5722; font-weight: bold; margin-bottom: 12px; }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+  }
+
+  button:hover { background: #333; }
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  background: #eee;
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #ddd;
+  transform: translateX(-2px);
+}
