@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px 0px;
-    background: #111;   /* ← fixed typo (backg\round) */
+    background: #111; 
     color: white;
     height:70px
   }
