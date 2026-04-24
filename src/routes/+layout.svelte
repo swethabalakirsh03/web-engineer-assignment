@@ -6,12 +6,13 @@
   let { children } = $props();
 </script>
 
-<nav>
-  <h2>MyProduct</h2>
-  <div>
-    <a href="/" class:active={$page.url.pathname === '/'}>Home</a>
-    <a href="/products" class:active={$page.url.pathname.startsWith('/products')}>Products</a>
 
+<nav class="nav">
+  <span class="nav-brand">YourStyle</span>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+    <a href="/about">About</a>
   </div>
 </nav>
 
@@ -22,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px 0px;
     background: #111;   /* ← fixed typo (backg\round) */
     color: white;
     height:70px
